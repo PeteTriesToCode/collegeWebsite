@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belgium Campus iTversity</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="BC_Favicon_Artboard-4-copy-768x481.jpg"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body style="background-color: black;">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="BC_Logo.png" alt="Belgium Campus iTversity Logo" />
+          <h1>Belgium Campus iTversity</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="our-teachers.html">OUR LECTURERS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a href="form.html" class="btn">Apply Now</a>
+          <a href="contact.html" class="btn">Need Help? Call us toll-free: 010 593 5368</a>
+        </div>
+      </div>
+    </header>
+    <!-- SWIPER BANNER -->
+    <div
+      class="swiper"
+      style="background-color: black; padding-top: 10px; padding-bottom: 30px"
+    >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Media/4.png" /></div>
+        <div class="swiper-slide">
+          <img src="Media/Matrix-portal-design.jpg" />
+        </div>
+        <div class="swiper-slide"><img src="Media/3.jpg" /></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <section
+      id="homePage_CardsSection"
+      style=" background-color: black"
+    >
+      <!-- 3 ReadMores -->
+      <div
+        style="
+          display: grid;
+          gap: 40px;
+          grid-template-columns: repeat(3, 1fr);
+          margin: 20px;
+          margin-bottom: 40px;
+          background-color: black;
+        "
+      >
+        <div class="ingrid">
+          <img src="innerpicthree.jpg" alt="" />
+          <h2>Social Impact: Belgium Campus empowers young...</h2>
+          <p>
+            Belgium Campus empowers learners by teaching them entrepreneurial
+            skills to benefit their communities.
+          </p>
+          <button>Read more</button>
+        </div>
+        <div class="ingrid">
+          <img src="innerpictwo.jpeg" alt="" />
+          <h2>Social Impact: Helping hand for Deaf...</h2>
+          <p>
+            Teams were recognised for the groundbreaking educational work they
+            do for...
+          </p>
+          <button>Read more</button>
+        </div>
+        <div class="ingrid">
+          <img src="innerpicfour.jpg" alt="" />
+          <h2>Accelerate Your IT Career at Belgium Campus</h2>
+          <p>
+            Dive into dynamic IT education with hands-on experience in coding,
+            data science, and more.
+          </p>
+          <button>Read more</button>
+        </div>
+      </div>
+
+      <!-- Article & Aside -->
+      <div>
+        <article style="padding: 20px; text-align: center">
+          <div class="block-grid">
+            <div>
+              <h1>Appointment of Belgium Dean and Vice-Chancellor</h1>
+            </div>
+            <div>
+              <h1>Together to fight Gender Based Violence</h1>
+            </div>
+            <div><h1>Undergraduate bursuaries & funding for 2024</h1></div>
+            <div><h1>Postgraduate Funding opportunites</h1></div>
+            <div>
+              <h1>Discover <br />Belgium Campus student portal</h1>
+            </div>
+            <div><h1>Applications for 2025 now open</h1></div>
+          </div>
+        </article>
+      </div>
+      <div></div>
+    </section>
+    <div style="display: flex; justify-content: center; align-items: center; background-color: black;">
+      <section id="homePage_EventsAndNotices">
+        <div id="homePage_EandN_Div" style="color: black; text-align: center">
+          <div><h1>EVENTS</h1></div>
+          <dl>
+            <dt>
+              Social Impact Seminar
+            </dt>
+    
+            <dt>
+              Hackathons and Coding Competition
+            </dt>
+    
+            <dt>
+              Tech Talk and Panels
+            </dt>
+            <dt>
+              Games Night and Competitions
+            </dt>
+            <dt>
+              <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">See all upcoming events</a>
+            </dt>
+          </dl>
+          
+  
+          <br />
+          <div><h1>NOTICES</h1></div>
+          <dl>
+            <dt>
+              Workshops
+            </dt>
+            <dt>
+              Library annual report 2024
+            </dt>
+            <dt>
+              <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">See all notices</a>
+            </dt>
+          </dl>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInterction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Belgium Campus iTversity</p>
+        <p>Kutenda Munatsi 601570 | Dillen Lee 600246 | Peter Horn 600235</p>
+      </div>
+    </footer>
+  </body>
+</html>

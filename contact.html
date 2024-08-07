@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="BC_Favicon_Artboard-4-copy-768x481.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="BC_Logo.png" alt="Belgium Campus iTversity Logo" />
+          <h1>Belgium Campus iTversity</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="our-teachers.html">OUR LECTURERS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a href="form.html" class="btn">Apply Now</a>
+          <a href="contact.html" class="btn"
+            >Need Help? Call us toll-free: 010 593 5368</a
+          >
+        </div>
+      </div>
+    </header>
+    <section class="contact">
+      <div class="container" id="contactContainer">
+        <h2 style="margin-bottom: 20px">Contact Us</h2>
+        <form id="contactForm">
+          <label style="display: block" for="name">Name & Surname:</label>
+          <input
+            type="text"
+            id="contactUs_Name"
+            name="name"
+            placeholder="Name & Surname"
+          /><br /><br />
+          <label style="display: block" for="email">Email:</label>
+          <input
+            type="email"
+            id="contactUs_Email"
+            name="email"
+            placeholder="Email Address"
+          /><br /><br />
+          <div id="errorMessage" style="display: none;"><h4></h4></div>
+          <label style="display: block" for="message">Message:</label>
+          <textarea id="contactUs_Message" name="message"></textarea
+          ><br /><br />
+          <button id="contactUs_Btn" type="submit">Send</button>
+        </form>
+        <h3 id="returnContactMessage_Container"></h3>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Belgium Campus iTversity</p>
+        <p>Kutenda Munatsi 601570 | Dillen Lee 600246 | Peter Horn 600235</p>
+      </div>
+    </footer>
+    <script>
+      function returnContactMessage(event) {
+        event.preventDefault();
+        let messageContainer = document.getElementById("returnContactMessage_Container");
+        let personName = document.getElementById("contactUs_Name").value;
+        messageContainer.textContent = `Thank you for your patience, ${personName}. Message Submitted. We will get back to you shortly!`;
+      }
+    
+      function checkEmptyFields(event) {
+        event.preventDefault();
+        let nameSurname = document.getElementById("contactUs_Name");
+        let messageBox = document.getElementById("errorMessage");
+    
+        if (nameSurname.value.trim() === '') {
+          messageBox.textContent = "Please enter your name & Surname";
+          messageBox.style.color = "red";
+          messageBox.style.textTransform = "uppercase";
+          messageBox.style.fontSize = "2rem";
+          messageBox.style.display = "block";
+        } else {
+          returnContactMessage(event);
+        }
+      }
+    
+      function clearErrorMessage() {
+        let messageBox = document.getElementById("errorMessage");
+        messageBox.style.display = "none";
+      }
+    
+      function clearMessageContainer() {
+        let messageContainer = document.getElementById("returnContactMessage_Container");
+        messageContainer.textContent = '';
+      }
+    
+      document.getElementById("contactForm").addEventListener("submit", checkEmptyFields);
+    
+      document.querySelectorAll("#contactUs_Name, #contactUs_Email, #contactUs_Message").forEach(input => {
+        input.addEventListener("input", () => {
+          clearErrorMessage();
+          clearMessageContainer();
+        });
+      });
+    </script>
+  </body>
+</html>

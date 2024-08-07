@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="BC_Favicon_Artboard-4-copy-768x481.jpg"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="BC_Logo.png" alt="Belgium Campus iTversity Logo" />
+          <h1>Belgium Campus iTversity</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="our-teachers.html">OUR LECTURERS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a href="form.html" class="btn">Apply Now</a>
+          <a href="contact.html" class="btn">Need Help? Call us toll-free: 010 593 5368</a>
+        </div>
+      </div>
+    </header>
+    <section class="courses">
+      <div class="container">
+        <h2>Courses</h2>
+        <p>Course list: BIT, BCOM, Diploma, Higher Certificate</p>
+        <input type="text" name="Search" id="course" placeholder="Please enter a course name"/><br>
+        <button onclick="choose()"><h4>Search</h4></button>
+        <div id="outputContainer">
+          <a href="#" id="output">Go to Course</a>
+        </div>
+        <div id="output2"></div>
+      </div>
+      <div id="courseDescriptionDescription_btn">
+        <h2 id="coursecompletion">Mark course for completion</h2>
+        <dl>
+          <div class="BIT_btn">
+            <dt><h4 id="BITtext">Bachelor of Information Technology</h4></dt>
+            <button class="BIT-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'" id="BITbtn">Mark as done</button>
+          </div>
+          <table class="BIT-tbl">
+            <tr>
+              <th>Bachelor of Information Technology Year 1</th>
+              <th>
+                <button class="BIT-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+            <tr>
+              <th>Bachelor of Information Technology Year 2</th>
+              <th>
+                <button class="BIT-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+            <tr>
+              <th>Bachelor of Information Technology Year 3</th>
+              <th>
+                <button class="BIT-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+          </table>
+          <br><hr style="width: 800px;"><br>
+          <div class="BCOM_btn">
+            <dt><h4 id="BCOMtext">Bachelor of Computing</h4></dt>
+          <button class="BCOM-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'" id="BCOMbtn">Mark as done</button>
+          </div>
+          <table class="BCOM-tbl">
+            <tr>
+              <th>Bachelor of Computing Year 1</th>
+              <th>
+                <button class="BCOM-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+            <tr>
+              <th>Bachelor of Computing Year 2</th>
+              <th>
+                <button class="BCOM-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+            <tr>
+              <th>Bachelor of Computing Year 3</th>
+              <th>
+                <button class="BCOM-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+            <tr>
+              <th>Bachelor of Computing Year 4</th>
+              <th>
+                <button class="BCOM-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+          </table>
+          <br><hr style="width: 800px;"><br>
+          <div class="DIP_btn">
+            <dt><h4 id="DIPtext">Diploma in Information Technology</h4></dt>
+          <button class="DIT-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'" id="DIPbtn">Mark as done</button>
+          </div>
+          <table class="BIT-tbl">
+            <tr>
+              <th>Diploma of Information Technology Year 1</th>
+              <th>
+                <button class="DIT-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+            <tr>
+              <th>Diploma of Information Technology Year 2</th>
+              <th>
+                <button class="DIT-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+            <tr>
+              <th>Diploma of Information Technology Year 3</th>
+              <th>
+                <button class="DIT-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+          </table>
+          <br><hr style="width: 800px;"><br>
+          <div class="HC_btn">
+            <dt><h4 id="HCtext">Higher Certificate</h4></dt>
+          <button class="HC-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'" id="HCbtn">Mark as done</button>
+          </div>
+          <table class="BIT-tbl">
+            <tr>
+              <th>Higher Certificate Year 1</th>
+              <th>
+                <button class="HC-course-btn" onclick="this.classList.toggle('done'); this.textContent = this.textContent === 'Mark as done' ? '✓ Done' : 'Mark as done'">Mark as done</button>
+              </th>
+            </tr>
+          </table>
+        </dl>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Belgium Campus iTversity</p>
+        <p>Kutenda Munatsi 601570 | Dillen Lee 600246 | Peter Horn 600235</p>
+      </div>
+    </footer>
+    <script src="website.js"></script>
+  </body>
+</html>
